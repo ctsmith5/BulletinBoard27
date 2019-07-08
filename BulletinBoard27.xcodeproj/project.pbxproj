@@ -15,6 +15,9 @@
 		AF97560922D39CEA0062EA6A /* BulletinBoard27Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF97560822D39CEA0062EA6A /* BulletinBoard27Tests.swift */; };
 		AF97561A22D39F000062EA6A /* CloudKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AF97561922D39F000062EA6A /* CloudKit.framework */; };
 		AF97561C22D39FBF0062EA6A /* Message.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF97561B22D39FBF0062EA6A /* Message.swift */; };
+		AF97561E22D3A6920062EA6A /* MessageListTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF97561D22D3A6920062EA6A /* MessageListTableViewController.swift */; };
+		AF97562022D3A6B00062EA6A /* MessageController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF97561F22D3A6B00062EA6A /* MessageController.swift */; };
+		AF97562322D3A8470062EA6A /* CloudKitController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF97562222D3A8470062EA6A /* CloudKitController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -41,6 +44,9 @@
 		AF97561722D39EFB0062EA6A /* BulletinBoard27.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = BulletinBoard27.entitlements; sourceTree = "<group>"; };
 		AF97561922D39F000062EA6A /* CloudKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CloudKit.framework; path = System/Library/Frameworks/CloudKit.framework; sourceTree = SDKROOT; };
 		AF97561B22D39FBF0062EA6A /* Message.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Message.swift; sourceTree = "<group>"; };
+		AF97561D22D3A6920062EA6A /* MessageListTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageListTableViewController.swift; sourceTree = "<group>"; };
+		AF97561F22D3A6B00062EA6A /* MessageController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageController.swift; sourceTree = "<group>"; };
+		AF97562222D3A8470062EA6A /* CloudKitController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CloudKitController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -89,9 +95,9 @@
 				AF97561522D39E770062EA6A /* Models */,
 				AF97561422D39E5C0062EA6A /* ModelControllers */,
 				AF97561322D39E500062EA6A /* ViewControllers */,
+				AF97562122D3A7F00062EA6A /* HelpersExtensions */,
 				AF9755F122D39CE50062EA6A /* AppDelegate.swift */,
 				AF9755F322D39CE50062EA6A /* SceneDelegate.swift */,
-				AF9755F722D39CE50062EA6A /* Main.storyboard */,
 				AF9755FA22D39CE90062EA6A /* Assets.xcassets */,
 				AF9755FC22D39CE90062EA6A /* LaunchScreen.storyboard */,
 				AF9755FF22D39CE90062EA6A /* Info.plist */,
@@ -111,6 +117,7 @@
 		AF97561322D39E500062EA6A /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
+				AF97561D22D3A6920062EA6A /* MessageListTableViewController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -118,6 +125,7 @@
 		AF97561422D39E5C0062EA6A /* ModelControllers */ = {
 			isa = PBXGroup;
 			children = (
+				AF97561F22D3A6B00062EA6A /* MessageController.swift */,
 			);
 			path = ModelControllers;
 			sourceTree = "<group>";
@@ -133,6 +141,7 @@
 		AF97561622D39E810062EA6A /* Storyboards */ = {
 			isa = PBXGroup;
 			children = (
+				AF9755F722D39CE50062EA6A /* Main.storyboard */,
 			);
 			path = Storyboards;
 			sourceTree = "<group>";
@@ -143,6 +152,14 @@
 				AF97561922D39F000062EA6A /* CloudKit.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		AF97562122D3A7F00062EA6A /* HelpersExtensions */ = {
+			isa = PBXGroup;
+			children = (
+				AF97562222D3A8470062EA6A /* CloudKitController.swift */,
+			);
+			path = HelpersExtensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -248,7 +265,10 @@
 			files = (
 				AF97561C22D39FBF0062EA6A /* Message.swift in Sources */,
 				AF9755F222D39CE50062EA6A /* AppDelegate.swift in Sources */,
+				AF97562022D3A6B00062EA6A /* MessageController.swift in Sources */,
 				AF9755F422D39CE50062EA6A /* SceneDelegate.swift in Sources */,
+				AF97562322D3A8470062EA6A /* CloudKitController.swift in Sources */,
+				AF97561E22D3A6920062EA6A /* MessageListTableViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
